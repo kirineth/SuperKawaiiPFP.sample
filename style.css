@@ -1,0 +1,188 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ }
+
+.main {
+  font-size: 1.2rem;
+  width:100vw;
+  height:100vh;
+  background:linear-gradient(to right,#f5f7d8,rgb(167, 170, 122));
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width:90%;
+  margin:20px auto;
+  align-items: center;
+  font-weight: 250;
+  z-index: 1;
+  position:sticky
+}
+
+.nav-links {
+flex:1;
+text-align: right;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.logo-area {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width:20%;
+  height:20%;
+  margin-right: 12px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+font-weight: 600;
+color:black;
+text-decoration: none;
+transition:0.3s;
+}
+
+.nav-links ul a:hover {
+  color:rgba(36, 36, 36, 0.671)
+}
+
+.main nav h2 {
+  font-family: 'Rubik Moonrocks', cursive;
+  font-weight: 500;
+}
+
+.character {
+  width: 1000px;
+  height: 1000px;
+  
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:-10%;
+}
+
+#circle{
+  width:1000px;
+  height:1000px;
+  position:absolute;
+  border-radius:50%;
+  top:0;
+  left:0;
+  transform: rotate(0deg);
+  transition:1.3s;
+}
+
+.item {
+  position: absolute;
+  color:white;
+}
+
+.item div {
+margin-left: 20px;
+color:black;
+font-size: 11px;
+}
+
+.item img{
+  width: 115px;
+ 
+}
+
+.item h1{
+  padding-top:30px
+}
+
+
+.one {
+  display: flex;
+  top: 465px;
+  left: 610px;
+
+}
+
+.two {
+ display: flex;
+ top:170px;
+ left:340px;
+ transform: rotate(-90deg);
+}
+
+.three {
+ display: flex;
+ top:425px;
+ right:615px;
+ transform: rotate(-180deg);
+}
+
+.four {
+ display: flex;
+ top:740px;
+ left:320px;
+ transform: rotate(-270deg);
+}
+
+.control{
+  position: absolute;
+  top:50%;
+  right:15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+.control img {
+width:15%;
+}
+
+.control h3 {
+  margin:20px 0px;
+  color: block;
+}
+
+#upBtn {
+  cursor: pointer;
+}
+
+#downBtn {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 520px solid #fff;
+  border-right: 520px solid transparent;
+  border-bottom: 520px solid #fff;
+  border-left: 520px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sign {
+  width:375px;
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:27%;
+  position:fixed;
+  top:540px;
+  left:180px;
+  z-index:10;
+}
